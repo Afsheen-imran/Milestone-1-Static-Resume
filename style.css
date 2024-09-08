@@ -8,6 +8,7 @@
     font-family: Arial, sans-serif;
     background-color: #d17cc3;
     padding: 20px;
+    background-image: url(https://img.freepik.com/free-vector/gradient-international-day-education-background_23-2151120677.jpg?w=740&t=st=1725781703~exp=1725782303~hmac=6073c714d5a275e3cd964872b7d1811aaa276aa2c19e031d2db6a300b88549fb);
   }
   
   .resume-container {
@@ -16,7 +17,7 @@
     background-color: #627bcf;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #007BFF;
+    border: 2px solid #ff9100;
     box-shadow: 0 0 15px rgba(25, 0, 25, 0.1);
   }
   
@@ -28,7 +29,7 @@
   .resume-section {
     background-color: #e9f0fa;
     padding: 15px;
-    border: 1px solid #007BFF;
+    border: 1px solid #ff5e00;
     border-radius: 5px;
     margin-bottom: 15px;
   }
