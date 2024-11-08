@@ -1,85 +1,162 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(220, 220, 220, 0.808);
+  margin: 0;
+  padding: 150px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  background-color: #1b5dce;
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+  border-right: 5px solid rgba(75, 147, 158, 0.918);
   
+  
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-top: 30%;
+  margin-right: 50px;
+  border-radius: 50%;
+  border: 5px solid rgb(151, 153, 156);
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: -10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 2%;
+  margin: 20px 0 10px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(44, 53, 67);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+ul {
+  list-style-type: fill-round;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+ul li {
+  margin: 5px 0;
+  
+}
+
+.right-section {
+  background-color: #a2bff0;
+  padding: 20px;
+  width: 65%;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(44, 53, 67);
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #507fcf;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  * {
+      padding: 0px;
+  }
+
   body {
-    font-family: Arial, sans-serif;
-    background-color: #d17cc3;
-    padding: 20px;
-    background-image: url(https://img.freepik.com/free-vector/gradient-international-day-education-background_23-2151120677.jpg?w=740&t=st=1725781703~exp=1725782303~hmac=6073c714d5a275e3cd964872b7d1811aaa276aa2c19e031d2db6a300b88549fb);
-  }
-  
-  .resume-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #627bcf;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #ff9100;
-    box-shadow: 0 0 15px rgba(25, 0, 25, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color:black;
-  }
-  
-  .resume-section {
-    background-color: #e9f0fa;
-    padding: 15px;
-    border: 1px solid #ff5e00;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
-  
-  img {
-    display: block;
-    max-width: 150px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    border: 3px solid #007BFF;
-  }
-  
-  p, ul {
-    margin: 10px 0;
-    color:blue
-    
-  }
-  
-  ul {
-    padding-left: 20px;
-    
-  }
-  
-  .buttons-container {
-    text-align: center;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin-top: 15px;
-    border:2px;
-    background-color: #2600ff;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #e986ec;
-  }
-  
-  @media (max-width: 768px) {
-    .resume-container {
       padding: 10px;
-    }
-  
-    button {
-      width: 100%;
-      margin-top: 10px;
-    }
   }
-  
+
+  .resume-container {
+      flex-direction: column;
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .right-section {
+      width: 280px;
+      padding: 5px;
+      margin: 5px;
+  }
+
+  h1 {
+      font-size: 20px;
+      text-align: center;
+      margin-left: 30px;
+  }
+
+  ul li {
+      width: 285px;
+      list-style: none;
+  }
+
+  p {
+      width: 90%;
+      padding: 20px;
+      text-align: left;
+  }
+
+  h3 {
+      font-size: 20px;
+      padding: 2px;
+      margin: 0px;
+      color: blue;
+      width: 270px;
+  }
+
+  .profile-picture {
+      margin: 10px;
+      width: 80px;
+  }
+
+  .left-section {
+      width: 280px;
+      padding: 5px;
+      margin: 5px;
+  }
+
+  #personal-info, #education, #skills, #work-exp {
+      text-align: center;
+      width: 200px;
+  }
+
+  button {
+      font-size: 15px;
+      width: 150px;
+      height: 30px;
+  }
+
+  img {
+      width: 150px;
+      height: auto;
+  }
+}

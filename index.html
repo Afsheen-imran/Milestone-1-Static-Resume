@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Resume</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="resume-container">
-    <h1>Static Resume</h1>
-
-    <!-- Personal Information Section -->
-    <section id="personal-info" class="resume-section">
-      <h2>Personal Information</h2>
-      <img id="profile-pic" src="my-pic.jpeg" alt="Profile Picture">
-      <p><strong>Name:</strong> Afsheen Imran</p>
-      <p><strong>Contact:</strong> 03366861922</p>
-      <p><strong>Email: afsheen6441@gmail.com</strong></p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="resume-section">
-      <h2>Education</h2>
-      <p><strong>Degree:</strong> Masters in Microbiology from Karachi University</p>
-      <p><strong>University:</strong> University of Karachi</p>
-      <p><strong> Post Graduation Year:</strong> 2022</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="resume-section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Frontend webdevelopment,HTMlL,CSS,TypeScript</li>
-        <li>Content Writing</li>
-        <li>Social Media Marketing</li>
-        <li>Graphic Designing</li>
-        <li>React.Js & Next.Js</li>
-        <li>Medical Transcription</li>
-      </ul>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="work-experience" class="resume-section">
-      <h2>Work Experience</h2>
-      <p><strong> 1 Year experience of working as a Freelancer </strong></p>
-      <p><strong> 1 year experience of working as social media marketer</p>
-      <p><strong>  2 years experience of working as Educationist.</p>
-    </section>
-
-    <!-- Buttons to toggle visibility -->
-    <div class="buttons-container">
-      <button id="show-next-btn">Show Next Section</button>
+    <h1>Static Interactive Resume</h1>
+    <div class="resume-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="/image/my-pic.jpeg" alt="Profile Picture" class="profile-picture">
+            <h2><strong>Web Developer</strong></h2>
+            <section id="objective">
+                <h3>Career Objective</h3>
+                <p>Seeking a responsible and challenging career with a growth-oriented organization where my talent, skills, and knowledge may significantly contribute to the organization's growth and profitability.</p>
+            </section>
+            <section id="certification">
+                <h3>Certification</h3>
+                <p>1. Certificate Course in MS Office from Computer Collegiate.<br><br>
+                   2. Medical Transcription Course from Trans-Med Medical Transcription Company.<br><br>
+                   3. Basic and Advanced Course of Content Writing from Edify Trainers.</p>
+            </section>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="right-section">
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <p><b>Name: </b> Afsheen Imran</p>
+                <p><b>Phone: </b> 0336-6861922</p>
+                <p><b>Email: </b> <a href="mailto:afsheen6441@gmail.com">afsheen6441@gmail.com</a></p>
+                <p><b>LinkedIn: </b> <a href="https://www.linkedin.com/in/afsheen-imran-b623a42a2/" target="_blank">www.linkedin.com</a></p>
+                <p><b>YouTube: </b> <a href="https://www.youtube.com/@CodewithAfsheen">Code with Afsheen</a></p>
+            </section>
+            
+            <!-- Education Section -->
+            <section id="education">
+                <h3>Education</h3>
+                <p><b>Masters:</b> MSC In Microbiology from University of Karachi</p>
+                <p><b>BSC (Hons):</b> From University of Karachi</p>
+                <p><b>FSC (Pre-medical):</b> From P.E.C.H.S College for Women</p>
+                <p><b>SSC (Science):</b> From Metropolitan Academy</p>
+            </section>
+            
+            <!-- Skills Section -->
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Frontend Web Development (HTML, CSS, TypeScript)</li>
+                    <li>Content Writing</li>
+                    <li>Social Media Marketing</li>
+                    <li>Graphic Designing</li>
+                    <li>React.js & Next.js</li>
+                    <li>Medical Transcription</li>
+                </ul>
+            </section>
+            
+            <!-- Work Experience Section -->
+            <section id="work-exp">
+                <h3>Work Experience</h3>
+                <p><strong>2 Years of Freelancing</strong></p>
+                <p><strong>2 Years of Social Media Marketing</strong></p>
+                <p><strong>3 Years of Teaching</strong></p>
+            </section>
+            
+            <!-- Toggle Button -->
+            <div class="buttons-container">
+                <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
